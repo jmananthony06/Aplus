@@ -23,8 +23,8 @@
             <nav>
                 <div class="hamburgerMenu" src="img/hamburger-menu.jpg"></div>
                 <a href="./Aplus.html">Home</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
+                <a data-goto="goToAbout">About</a>
+                <a data-goto="goToFooter">Contact</a>
            </nav>
        </header> 
 
@@ -32,12 +32,12 @@
             <div class="divCard">
                 <a class="overlay" href="services.html"></a>
                 <img src="./img/sanitizer-2.jpg" alt="" class="homeIcon">
-                <p>A+ Essential Sanitization</p>
+                <p>Sanitization</p>
             </div>
             <div class="divCard">
                 <a class="overlay" href="services.html"></a>
                 <img src="./img/sterilization.jpg" alt="" class="homeIcon">
-                <p>A+ Essential Sterilization</p>
+                <p>Sterilization</p>
             </div>
             <div class="divCard">
                 <a class="overlay" href="services.html"></a>
@@ -47,13 +47,12 @@
             <div class="divCard">
                 <a class="overlay" href="services.html"></a>
                 <img src="./img/delivery.jpg" alt="" class="homeIcon">
-                <p>A+ Essential Delivery</p>
+                <p>Delivery</p>
             </div>
         </div>
        
         <div class="homeContentDiv">
-            <h1>A Plus Essential Services</h1>
-            <!-- put a large img here to space between banner and "about" text -->
+            <h1>A Plus Essential Services</h1>            
             <p>Committed to supporting our fellow residents, frontline workers and local businesses by providing excellent sanitization, sterilization and general purpose services.</p>
             <a href="services.html"><button><span>What we do</span></button></a>
         </div>
@@ -62,14 +61,14 @@
             <h1>About</h1>
         </div>
 
-        <div class="aboutSection">
+        <div class="aboutSection" id="goToAbout">
             <img class="aboutImg" src="./img/about-img.jpg" alt="">
             <div class="aboutParContainer">
                 <p>A+ Essential Services LLC is a company dedicated to the needs of the community and local businesses in a variety of essential services. Our company delivers A+ Quality services ranging from sanitation to lawn care just to name a few. Supporting our frontline workers, local businesses and being forever committed to our community is what defines us here at A+ E.S. LLC.</p>
             </div>
         </div>
 
-        <footer class="contactFooter">
+        <footer class="contactFooter" id="goToFooter">
             <img src="img/ap-logo.png" alt="" class="footerLogo">
             <ul class="footerIcons">
                 <i class="fa fa-2x fa-facebook"></i>
@@ -84,6 +83,6 @@
             add small company copyright text
             -->
         </footer>
-        <!-- <script src="js/Aplus.js"></script> -->
+        <script src="js/scrollTo.js"></script>
     </body>
 </html>
