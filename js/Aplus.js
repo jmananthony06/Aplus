@@ -1,4 +1,3 @@
-// Mobile Query
 
 // function myFunction() {
 //     var x = document.getElementsByClassName("hamburgerMenu");
@@ -7,4 +6,9 @@
 //     } else {
 //       x.style.display = "block";
 //     }
-//   }
+// }
+
+hamburgerID.addEventListener( 'click', (e) => {
+    let menu = document.getElementsByClassName('menu')[0];
+    menu.classList.toggle('open');
+});
