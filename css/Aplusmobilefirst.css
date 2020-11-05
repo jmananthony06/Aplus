@@ -1,0 +1,918 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.overlay {
+    position: absolute;
+    width: 88%;
+    height: 408px;
+}
+
+.logo {
+    height: 120px;
+    width: 140px;
+    border-radius: 50%;
+    margin-left: 92px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+header nav .menu.open {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    text-align: center;
+    animation: fadeIn .2s linear;
+}
+
+.menu.open a {
+    color: rgb(29, 62, 109);
+    font-size: 20px;
+    font-weight: 550;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    };
+    100% {
+        opacity: 1
+    };
+}
+
+.socialIcons {
+    display: none;
+}
+
+.socialIcons i:hover {
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+}
+
+.menu a:hover {
+    cursor: pointer;
+}
+
+.aboutImg {
+    height: 300px;
+    width: 250px;
+}
+
+.homeIcon {
+    margin-top: 20px;
+    height: 300px;
+    width: 100%;
+    border-radius: 20%;
+}
+
+/* TOP HOME DIV */ 
+
+.homeContentDiv {
+    padding: 15px;
+    width: 100%;
+    margin-top: 2.5%;
+    background-color: rgba(240, 248, 255, 0.1);
+    border-radius: 20px;
+    border: 3px solid rgba(89, 194, 214, 0.020);
+}
+
+.homeContentDiv h1 {
+    color: rgb(36, 62, 106);
+    font-size: 38px;
+    text-align: center;
+}
+
+.homeContentDiv p {
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 80%;
+    color: rgba(26, 29, 53, 0.85);
+    text-align: center;
+}
+
+button {
+    margin-top: 1.5%;
+    margin-left: 25%;
+    padding: 20px 20px; 
+    width: 50%;
+    border: none;
+    background-color: rgb(36, 62, 106);
+    border-radius: 5px;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgb(89, 194, 214);
+    transition: .2s;
+}
+
+button span {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    color: white;
+}
+
+/*************************************************/
+/***********************/
+/**** NEED TO KNOW *****/
+/** IMG CLICK (ABOUT) **/
+/***********************/
+
+.knowTextContent {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 6%;
+    border-radius: 10px;
+}
+
+.knowTextContent h1 {
+    color: rgb(26, 29, 52);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.knowTextContent p {
+    font-size: 20px;
+    width: 95%;
+    text-align: center;
+    margin: auto;
+    padding: 25px;
+    line-height: 30px;
+}
+
+.immuneSystemHeader {
+    color: rgb(26, 29, 52);
+    text-align: center;
+    font-size: 30px;
+}
+ /* LINE BREAK */
+
+.lineBreak {
+    border: 1px solid rgb(41, 62, 103);
+    width: 85%;
+    margin: 35px auto;
+}
+
+/*******************/
+
+.onGuardHeader {
+    color: rgb(26, 29, 52);
+    text-align: center;
+    font-size: 30px;
+}
+
+.onGuardHeader p {
+    font-size: 20px;
+}
+
+.cdcAnchor {
+    text-decoration: underline;
+    color: rgb(26, 29, 52);
+    margin-left: 39%;
+    font-weight: 900;
+}
+
+.immuneFoods {
+    color: rgb(26, 29, 52);
+    text-align: center;
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.immuneFoods li {
+    margin: 3px;
+    font-size: 18px;
+}
+
+.faceCovering {
+    color: rgb(26, 29, 52);
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+}
+
+.notSpan {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.coveringUL {
+    margin: auto;
+    margin-top: 40px;
+    list-style: none;
+    width: 80%;
+}
+
+.coveringUL li {
+    margin: 10px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/*************************************************/
+
+/***********************/
+/**** ABOUT SECTION ****/
+/***********************/
+
+.bannerContainer {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(26, 29, 51);
+    border-radius: 10px;
+}
+
+.bannerContainer h1 {
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+}
+
+
+.aboutSectionTwo {
+    margin-top: 10%;
+    width: 100%;
+    border: 3px solid rgb(26, 29, 52, .050);
+    border-radius: 10px;
+    margin-bottom: 10%;
+}
+
+.aboutSectionTwo img {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    /* margin-left: 33%; */
+    margin-left: 6.5em;
+    margin-top: 5%;
+}
+
+.aboutSectionTwo a p {
+    text-align: center;
+    color: rgb(26, 29, 52);
+    margin-top: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.safeOne {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    width: 100%;
+    margin-left: 6%;
+}
+
+.safeTwo {
+    margin-bottom: 1%;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    margin-left: 6%;
+}
+
+.safeOne,
+.safeTwo {
+    line-height: 24px;
+    width: 90%;
+}
+
+.aboutSection {
+    margin-top: 10%;
+    width: 100%;
+    border: 3px solid rgb(26, 29, 52, .050);
+    border-radius: 10px;
+    margin-bottom: 10%;
+}
+
+.aboutSection h3 {
+    text-align: center;
+    margin-top: 1%;
+    font-size: 40px;
+}
+
+.aboutImg {
+    height: 320px;
+    width: 100%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.aboutParContainer {
+    line-height: 30px;
+    padding: 20px;
+    background-color: aliceblue;
+    width: 100%;
+    margin: auto;
+}
+
+.aboutParContainer p {
+    font-size: 20px;
+}
+
+.aboutSection p {
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    color: rgb(41, 62, 103);
+}
+
+.iconDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.divCard {
+    margin-bottom: 30px;
+    width: 90%;
+    border: 3px solid rgba(29, 62, 109, 0.1);
+    border-radius: 5%;
+}
+
+.divCard:hover {
+    box-shadow: 0 4px 7px rgba(29, 62, 109, 0.3);
+    transition: box-shadow 0.1s ease-in-out;
+    background-color: rgba(240, 248, 255, 0.3);
+} 
+
+.divCard p {
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 24px;
+    background-color: rgba(240, 248, 255, 0.452);
+    border-radius: 5%;
+    color: rgba(29, 62, 109, 0.87);
+}
+
+/*************************/
+/***** SERVICES PAGE *****/
+/*************************/
+
+.bannerContainer {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(26, 29, 51);
+    border-radius: 10px;
+}
+
+.bannerContainer h1 {
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+}
+
+.servicesDivOne {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.9);
+}
+
+.servicesDivOne h1 {
+    color: rgb(27, 30, 47);
+    text-align: center;
+}
+
+.imgUVOne,
+.imgUVTwo,
+.imgUVThree {
+    margin-left: 5.3%;
+    margin-top: 3%;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.communicationOfServiceContainer .textContentOne {
+    background-color: aliceblue;
+    color: rgb(27, 30, 47);
+}
+
+.servicesDivTwo {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.servicesDivTwo h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.servicesDivTwo p {
+    margin-top: 2.5%;
+    text-align: center;
+}
+
+.servicesHomePageIcon {
+    height: 400px;
+    width: 400px;
+    border-radius: 25%;
+    display: flex;
+    margin: auto;
+    margin-top: 3%;
+}
+
+/**** SERVICES CONTENT ****/
+
+.imgUVOne,
+.imgUVTwo {
+    height: 250px;
+    width: 250px;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    margin-left: 1.5em;
+}
+
+.textContentOne {
+    margin: 30px;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgb(26, 29, 51);
+}
+
+.priceContentOne {
+    margin: 15px;
+    line-height: 20px;
+    color: rgb(36, 62, 106);
+}
+
+.servicesHomePageIcon {
+    width: 250px;
+    height: 250px;
+}
+
+/********************/
+/****** FOOTER ******/
+/********************/
+
+footer {
+    height: 300px;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+.footerLogo {
+    display: flex;
+    margin: auto;
+    height: 120px;
+    width: 140px;
+    border-radius: 50%;
+}
+
+.footerIcons {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 2%;
+    width: 80%;
+    font-size: 12px;
+    color: rgb(29, 62, 109);
+}
+
+.footerIcons i {
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    padding: 12px;
+}
+
+.footerIcons i:hover {
+    background-color: rgb(36, 62, 106);
+    color: white;
+}
+
+.contactFooter a {
+    font-size: 16px;
+    font-weight: 550;
+    color: rgba(0, 0, 0, 0.671);
+    margin-left: 21%;
+    text-decoration: none;
+}
+
+
+/*************************/
+/******** QUERIES ********/
+/*************************/
+
+@media (min-width: 768px) {
+    
+    header {
+        height: 150px;
+    }
+
+    header .logo {
+        height: 130px;
+        width: 150px;
+        margin-left: 19.5em;
+        margin-top: -50px;
+    }
+
+    /* .socialIcons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 35%;
+        margin-left: 30px;
+    } */
+
+    .socialIcons i {
+        background-color: white;
+        color: rgb(36, 62, 106);
+        padding: 10px;
+        border-radius: 50%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    i:hover {
+        background-color: rgba(36, 62, 106);
+        color: rgb(255, 255, 255);
+        transition: .3s ease-in-out;
+        border-radius: 50%;
+    }
+
+    .hamburgerMenu {
+        display: none;
+    }
+
+    nav {
+        width: 20%;
+        display: flex;
+        margin-left: -260px;
+        margin-top: 100px;
+    }
+
+    nav a {
+        color: rgb(29, 62, 109);
+        text-decoration: none;
+        font-weight: 550;
+        font-size: 18px;
+        padding: 6px 10px;
+    }
+    
+    nav a:hover {
+        color: white;
+        background-color: rgb(36, 62, 103);
+        transition: .2s ease-in-out;
+        border-radius: 12px;
+    }
+    
+    .menu {
+        display: flex;
+        width: 20%;
+        margin: auto;
+    }
+
+
+    .aboutImg {
+        width: 70%;
+        margin-top: 30px;
+        margin-left: 7.2em;
+        box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /********** ABOUT SECTION TWO **********/
+
+    .aboutSectionTwo .safeOne {
+        margin-top: 25px;
+    }
+
+    .aboutSectionTwo img {
+        margin-left: 43%;
+    }
+
+    .iconDiv {
+        width: 100%;
+    }
+
+    .divCard {
+        width: 350px;
+        height: 350px;
+    }
+
+    .homeIcon {
+        height: 250px;
+        width: 250px;
+        margin: auto;
+        margin-left: 14%;
+    }
+
+    a.overlay {
+        width: 344px;
+        height: 344px;
+    }
+
+    .cdcAnchor {
+        margin-left: 45%;
+    }
+
+    /* Services */
+
+    .imgUVTwo {
+        margin-left: 170px;
+    }
+
+    .textContentOne {
+        font-size: 20px;
+    }
+
+    /********** FOOTER **********/
+
+    .footerLogo {
+        height: 130px;
+        width: 150px;
+    }
+
+    .footerIcons {
+        width: 45%;
+    }
+
+    .contactFooter a {
+        margin-left: 38%
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    header .logo {
+        margin: auto;
+    }
+    
+    .socialIcons {
+        /* width: 20%; */
+        margin: 0 0 0 240px;
+        display: flex;
+    }
+
+    .socialIcons i {
+        margin: 0 10px;
+    }
+
+    .menu {
+        /* width: 40%; */
+        margin-top: -64px;
+        margin-left: 350px;
+    }
+
+    .homeContentDiv h1 {
+        font-size: 50px;
+    }
+
+    .homeContentDiv p {
+        font-size: 26px;
+    }
+
+    .homeContentDiv span {
+        font-size: 20px;
+    }
+
+    .aboutSectionTwo {
+        width: 80%;
+        margin: auto;
+        margin-top: 70px;
+    }
+
+    .aboutSectionTwo .safeOne {
+        line-height: 25px;
+    }
+
+    .aboutSection {
+        width: 80%;
+        margin: auto;
+    }
+
+    .aboutSection .aboutImg {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 50px;
+    }
+
+    .cdcAnchor {
+        margin-left: 47%;
+    }
+
+    /* Services */
+
+    .imgUVOne {
+        margin-left: 160px;
+    }
+
+    .servicesHomePageIcon {
+        height: 300px;
+        width: 300px;
+    }
+
+    .iconDiv {
+        width: 100%;
+        margin: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .divCard {
+        margin: 25px;
+    }
+
+    a.overlay {
+        width: 344px;
+    }
+
+    .footerIcons {
+        width: 40%;
+    }
+
+    .contactFooter a {
+        margin-left: 40.5%;
+    }
+
+}
+
+@media (min-width: 1281px) {
+
+    .socialIcons {
+        /* width: 22%; */
+        margin-left: 27.5%;
+    }
+
+    /* nav {
+        width: 20%;
+        margin-left: 100px;
+    } */
+
+    .menu {
+        width: 300px;
+        margin-left: 30em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .homeContentDiv p {
+        width: 50%;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .homeContentDiv button {
+        width: 25%;
+        margin-left: 37.5%;
+    }
+
+    .aboutSectionTwo .safeOne {
+        width: 70%;
+        font-size: 24px;
+        margin: auto;
+        margin: 30px 0 50px 7em;
+        /* margin-bottom: 50px; */
+        line-height: 30px;
+    }
+
+    .aboutSectionTwo .safeTwo {
+        margin-left: 7em;
+        width: 65%;
+        font-size: 24px;
+    }
+
+    .aboutSectionTwo img {
+        margin-left: 25.5em;
+        height: 200px;
+        width: 200px;
+    }
+
+    .aboutImg {
+        height: 500px;
+    }
+
+    .cdcAnchor {
+        margin-left: 48%;
+    }
+
+    /* Services */
+
+    .imgUVOne,
+    .imgUVTwo {
+        height: 400px;
+        width: 400px;
+        margin: 50px;
+        margin-left: 9.5%;
+    }
+
+    .servicesHomePageIcon {
+        width: 350px;
+        height: 350px;
+    }
+
+    .servicesDivOne {
+        padding: 40px;
+    }
+    
+    .iconDiv {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 80%;
+    }
+
+    .footerIcons {
+        width: 20%;
+        margin-bottom: 20px;
+    }
+
+    .contactFooter a {
+        margin-left: 34.5em;
+    }
+}
+
+@media (min-width:1600px) {
+
+    .socialIcons {
+        margin-left: 35%;
+    }
+
+    .menu {
+        margin-left: 50em;
+    }
+
+    .aboutSectionTwo img {
+        margin-left: 41.5em;
+    }
+
+    .aboutSection .aboutImg {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .iconDiv {
+        width: 100%;
+    }
+
+    .contactFooter a {
+        margin-left: 45.1%;
+    }
+
+    .imgUVOne,
+    .imgUVTwo {
+        margin-left: 16%;
+        height: 450px;
+        width: 450px;
+    }
+}
