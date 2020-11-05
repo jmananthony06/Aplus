@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* outline: 1px solid red; */
 }
 
 html {
@@ -12,7 +11,6 @@ html {
 body {
     width: 100%;
     background-color: rgb(255, 255, 255);
-    /* margin: auto; */
     font-family: 'Segoe UI', sans-serif;
 }
 
@@ -20,9 +18,7 @@ header {
     height: 110px;
     width: 100%;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-    /* sticky values below */
     position: sticky;
     top: 0;
     background-color: white;
@@ -39,14 +35,14 @@ a.overlay {
 }
 
 .logo {
-    height: 90px;
-    width: 90px;
+    height: 120px;
+    width: 140px;
     border-radius: 50%;
+    margin-left: 92px;
 }
 
 nav {
     margin-left: auto;
-    /* margin-right: 15px; */
 }
 
 header nav .menu.open {
@@ -63,7 +59,6 @@ header nav .menu.open {
     padding: 30px;
     text-align: center;
     animation: fadeIn .2s linear;
-    /* border-radius: 10px; */
 }
 
 .menu.open a {
@@ -107,9 +102,6 @@ header nav .menu.open {
     height: 300px;
     width: 100%;
     border-radius: 20%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 /* TOP HOME DIV */ 
@@ -170,8 +162,6 @@ button span {
 /***********************/
 
 .knowTextContent {
-    /* border: 3px solid rgba(0, 0, 0, 0.11); */
-    /* height: 1450px; */
     width: 100%;
     margin: auto;
     margin-bottom: 6%;
@@ -281,7 +271,6 @@ button span {
 .bannerContainer h1 {
     color: white;
     text-align: center;
-    /* padding: 12px; */
     margin: auto;
     font-size: 40px;
 }
@@ -299,7 +288,8 @@ button span {
     height: 110px;
     width: 110px;
     border-radius: 50%;
-    margin-left: 33%;
+    /* margin-left: 33%; */
+    margin-left: 6.5em;
     margin-top: 5%;
 }
 
@@ -332,12 +322,10 @@ button span {
 .safeTwo {
     line-height: 24px;
     width: 90%;
-    /* margin: auto; */
 }
 
 .aboutSection {
     margin-top: 10%;
-    /* height: 750px; */
     width: 100%;
     border: 3px solid rgb(26, 29, 52, .050);
     border-radius: 10px;
@@ -383,7 +371,6 @@ button span {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    /* margin: auto; */
     margin-top: 5%;
     margin-bottom: 1%;
 }
@@ -428,17 +415,13 @@ button span {
 .bannerContainer h1 {
     color: white;
     text-align: center;
-    /* padding: 12px; */
     margin: auto;
     font-size: 40px;
 }
 
 .servicesDivOne {
-    /* height: 50vh; */
     width: 100%;
     padding: 10px;
-    /* margin-bottom: 10%; */
-    /* border: 3px solid rgb(26, 29, 52, .050); */
     border-radius: 10px;
     background-color: rgba(240, 248, 255, 0.9);
 }
@@ -451,7 +434,7 @@ button span {
 .imgUVOne,
 .imgUVTwo,
 .imgUVThree {
-    margin-left: 8%;
+    margin-left: 5.3%;
     margin-top: 3%;
     height: 400px;
     width: 400px;
@@ -463,22 +446,13 @@ button span {
     color: rgb(27, 30, 47);
 }
 
-/* .sanitization,
-.sterilization {
-    color: white;
-} */
-
 .servicesDivTwo {
-    /* height: 30vh; */
     width: 100%;
-    /* margin-bottom: 10%; */
-    /* border: 3px solid rgb(26, 29, 52, .050); */
     border-radius: 10px;
 }
 
 .servicesDivTwo h1 {
     text-align: center;
-    /* color: rgb(27, 30, 47); */
     margin-top: 20px;
 }
 
@@ -502,7 +476,9 @@ button span {
 .imgUVTwo {
     height: 250px;
     width: 250px;
-    /* margin-bottom: 50px; */
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    margin-left: 1.5em;
 }
 
 .textContentOne {
@@ -537,8 +513,8 @@ footer {
 .footerLogo {
     display: flex;
     margin: auto;
-    height: 110px;
-    width: 110px;
+    height: 120px;
+    width: 140px;
     border-radius: 50%;
 }
 
@@ -563,12 +539,12 @@ footer {
     color: white;
 }
 
-.contactFooter p {
-    font-size: 10px;
-    color: rgba(0, 0, 0, 0.336);
-    text-align: center;
-    margin-top: 35px;
-    margin-left: 10px;
+.contactFooter a {
+    font-size: 16px;
+    font-weight: 550;
+    color: rgba(0, 0, 0, 0.671);
+    margin-left: 21%;
+    text-decoration: none;
 }
 
 
@@ -583,17 +559,19 @@ footer {
     }
 
     header .logo {
-        height: 150px;
+        height: 130px;
         width: 150px;
+        margin-left: 19.5em;
+        margin-top: -50px;
     }
 
-    .socialIcons {
+    /* .socialIcons {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         width: 35%;
         margin-left: 30px;
-    }
+    } */
 
     .socialIcons i {
         background-color: white;
@@ -619,7 +597,8 @@ footer {
     nav {
         width: 20%;
         display: flex;
-        margin-left: 0;
+        margin-left: -260px;
+        margin-top: 100px;
     }
 
     nav a {
@@ -641,6 +620,14 @@ footer {
         display: flex;
         width: 20%;
         margin: auto;
+    }
+
+
+    .aboutImg {
+        width: 70%;
+        margin-top: 30px;
+        margin-left: 7.2em;
+        box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
     }
 
     /********** ABOUT SECTION TWO **********/
@@ -691,24 +678,40 @@ footer {
     /********** FOOTER **********/
 
     .footerLogo {
-        height: 150px;
+        height: 130px;
         width: 150px;
     }
 
     .footerIcons {
-        width: 60%;
+        width: 45%;
+    }
+
+    .contactFooter a {
+        margin-left: 38%
     }
 
 }
 
 @media (min-width: 1024px) {
+
+    header .logo {
+        margin: auto;
+    }
     
     .socialIcons {
-        width: 48%;
+        /* width: 20%; */
+        margin: 0 0 0 240px;
+        display: flex;
     }
 
-    .nav {
-        width: 40%;
+    .socialIcons i {
+        margin: 0 10px;
+    }
+
+    .menu {
+        /* width: 40%; */
+        margin-top: -64px;
+        margin-left: 350px;
     }
 
     .homeContentDiv h1 {
@@ -778,22 +781,27 @@ footer {
         width: 40%;
     }
 
+    .contactFooter a {
+        margin-left: 40.5%;
+    }
+
 }
 
 @media (min-width: 1281px) {
-    
+
     .socialIcons {
-        width: 22%;
-        margin-left: 32%;
+        /* width: 22%; */
+        margin-left: 27.5%;
     }
 
-    nav {
+    /* nav {
         width: 20%;
-        margin-left: 400px;
-    }
+        margin-left: 100px;
+    } */
 
     .menu {
-        width: 400px;
+        width: 300px;
+        margin-left: 30em;
         display: flex;
         justify-content: space-between;
     }
@@ -814,20 +822,21 @@ footer {
         width: 70%;
         font-size: 24px;
         margin: auto;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin: 30px 0 50px 7em;
+        /* margin-bottom: 50px; */
         line-height: 30px;
     }
 
     .aboutSectionTwo .safeTwo {
-        margin-left: 22%;
+        margin-left: 7em;
+        width: 65%;
         font-size: 24px;
     }
 
     .aboutSectionTwo img {
+        margin-left: 25.5em;
         height: 200px;
         width: 200px;
-        margin-left: 750px;
     }
 
     .aboutImg {
@@ -842,8 +851,10 @@ footer {
 
     .imgUVOne,
     .imgUVTwo {
-        height: 350px;
-        width: 350px;
+        height: 400px;
+        width: 400px;
+        margin: 50px;
+        margin-left: 9.5%;
     }
 
     .servicesHomePageIcon {
@@ -851,13 +862,14 @@ footer {
         height: 350px;
     }
 
-    .imgUVOne {
-        margin-left: 510px;
+    .servicesDivOne {
+        padding: 40px;
     }
     
     .iconDiv {
         margin-top: 100px;
         margin-bottom: 100px;
+        width: 80%;
     }
 
     .footerIcons {
@@ -865,8 +877,42 @@ footer {
         margin-bottom: 20px;
     }
 
-    .contactFooter p {
-        margin-top: -1px;
+    .contactFooter a {
+        margin-left: 34.5em;
+    }
+}
+
+@media (min-width:1600px) {
+
+    .socialIcons {
+        margin-left: 35%;
     }
 
+    .menu {
+        margin-left: 50em;
+    }
+
+    .aboutSectionTwo img {
+        margin-left: 41.5em;
+    }
+
+    .aboutSection .aboutImg {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .iconDiv {
+        width: 100%;
+    }
+
+    .contactFooter a {
+        margin-left: 45.1%;
+    }
+
+    .imgUVOne,
+    .imgUVTwo {
+        margin-left: 16%;
+        height: 450px;
+        width: 450px;
+    }
 }
