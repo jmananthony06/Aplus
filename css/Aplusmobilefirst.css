@@ -285,6 +285,7 @@ button span {
     /* padding: 10px; */
     border-radius: 10px;
     border: 2px solid rgba(26, 29, 51, 0.05);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .knowTextContent h1,
@@ -693,22 +694,152 @@ footer {
 /******** QUERIES ********/
 /*************************/
 
-@media (min-width: 768px) {
+/********** iPhone 6 **********/
+@media (min-width: 375px) {
+
+    .contentSuite {
+        margin: 10px auto 20px auto;
+    }
+
+    .about,
+    .protocol,
+    .services {
+        width: 100px;
+        height: 100px;
+    }
+
+    .kioskIllustration {
+        height: 140px;
+        width: 375px;
+    }
+
+    .aboutIllustration {
+        margin: 0 auto 130px auto;
+        height: 160px;
+        width: 375px;
+    }
+
+    .iconAndText {
+        width: 50%;
+    }
+
+    .iconAndText li {
+        margin-left: auto;
+        width: 25%;
+    }
+}
+
+/********** iPhone XR, iPhone 11, iPhone 6s Plus, 7 Plus, 8 Plus, XS Max, 11 Pro Max **********/
+@media (min-width: 414px) {
+    .about,
+    .protocol,
+    .services {
+        width: 110px;
+        height: 110px;
+    }
+
+    .kioskIllustration {
+        height: 160px;
+        width: 414px;
+        margin-bottom: 67px
+    }
+
+    .aboutIllustration {
+        width: 414px;
+        margin: 20px auto 180px auto;
+    }
+}
+
+/********** iPhone 12 mini **********/
+@media (min-width: 360px) {
+    .kioskIllustration {
+        height: 130px;
+        width: 360px;
+        margin-bottom: 47px;
+    }
+
+    .aboutIllustration {
+        width: 360px;
+        margin-bottom: 100px;
+    }
+}
+
+/********** iPhone 12 **********/
+@media (min-width: 390px) {
     
-    header {
-        height: 200px;
-        width: 100%;
-        flex-direction: column;
+    .kioskIllustration {
+        width: 390px;
+        margin: 0 auto 16px auto;
+    }
+
+    .aboutIllustration {
+        width: 390px;
+        margin-bottom: 104px;
+    }
+}
+
+@media (min-width: 428px) {
+
+    .kioskIllustration {
+        width: 428px;
+        margin-bottom: -1px;
+    }
+
+    .aboutIllustration {
+        width: 428px;
+        margin-bottom: 77px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .homeTopContainer {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        width: 80%;
+        margin: auto;
+    }
+
+    .homeContentDiv {
+        margin-top: 0;
     }
 
     .logo {
         /*FIGURE OUT PLACEMENT ISSUES - BOOKMARK*/
-        height: 110px;
-        width: 120px;
+        height: 140px;
+        width: 160px;
         margin: 0 0 20px 0;
         /* display: flex;    */
     }
 
+    .suiteTitleText {
+        margin-top: 30px;
+    }
+
+    .kioskIllustration {
+        width: 768px;
+    }
+
+    .aboutIllustration {
+        width: 768px;
+        margin: 25px auto 25px auto;
+        height: 250px;
+    }
+
+    .aboutP {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .knowTextContent,
+    .boostImmunityDiv {
+        /* width: 300px; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 325px;
+        flex: 1;
+    }
 
     .socialIcons {
         display: none;
