@@ -9,8 +9,7 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-}
+    font-family: 'Segoe UI', sans-serif;}
 
 /* header {
     height: 150px;
@@ -41,14 +40,7 @@ a.overlay { overlay for card at bottom of home page
 .logo {
     height: 120px;
     width: 140px;
-    border-radius: 10px;
-    box-shadow:  
-    0 6px 6px rgba(77, 36, 134, 0.001),
-    0 10px 16px rgba(77, 36, 134, 0.001),
-    0 6px 12px rgba(77, 36, 134, 0.001),
-    0 6px 4px rgba(77, 36, 134, 0.01),
-    0 2px 4px rgba(77, 36, 134, 0.001),
-    0 6px 4px rgba(77, 36, 134, 0.001)
+    -webkit-box-reflect: below -35px linear-gradient(transparent, rgba(255, 255, 255, .10%), rgba(255, 255, 255, 0.990) 125%);
 }
 
 .goBackArrow {
@@ -136,7 +128,12 @@ a.overlay { overlay for card at bottom of home page
     font-size: 18px;
 }
 
-/* TOP HOME DIV */ 
+/* TOP HOME DIV */
+
+.homeTopContainer {
+    background-color: #ffffff;
+    background: linear-gradient(360deg, #ffffff 0%, #79b8ff0e 10%);
+}
 
 .homeContentDiv {
     /* margin-top: 2.5%; */
@@ -155,7 +152,7 @@ a.overlay { overlay for card at bottom of home page
 
 .homeContentDiv p {
     margin: 10px auto 0 auto;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     color: rgba(26, 29, 53, 0.85);
     text-align: center;
@@ -168,16 +165,31 @@ a.overlay { overlay for card at bottom of home page
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 5px auto 30px auto;
+    margin: 5px auto 10px auto;
 }
 
 .suiteTitleText {
     display: flex;
     justify-content: center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     color: rgb(36, 62, 106);
     margin-top: 60px;
+}
+
+.kioskIllustration {
+    /* margin: auto; */
+    margin: 3px auto 30px auto;
+    height: 120px;
+    width: 320px;
+    position: relative;
+    /* left: -5px; */
+}
+
+.aboutIllustration {
+    margin: 0 auto 73px auto;
+    height: 140px;
+    width: 320px;
 }
 
 .about,
@@ -187,8 +199,8 @@ a.overlay { overlay for card at bottom of home page
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border: 2px solid rgba(36, 62, 106, 0.01);
     border-radius: 10px;
     margin: 10px;
@@ -217,8 +229,8 @@ a.overlay { overlay for card at bottom of home page
 .about img,
 .protocol img,
 .services img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -301,7 +313,7 @@ button span {
 .boostImmunityDiv .immuneFoods li,
 .knowTextContent .immuneFoods li {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     width: 80%;
     text-align: center;
     margin: 0 auto 0 auto;
@@ -432,7 +444,7 @@ button span {
     font-weight: 400;
     width: 90%;
     text-align: center;
-    margin: 40px auto 275px auto;
+    margin: 40px auto 60px auto;
     padding: 20px;
     line-height: 22px;
     border: 2px solid rgba(36, 62, 106, 0.02);
