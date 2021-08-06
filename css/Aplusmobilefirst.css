@@ -130,10 +130,10 @@ a.overlay { overlay for card at bottom of home page
 
 /* TOP HOME DIV */
 
-.homeTopContainer {
+/* .homeTopContainer {
     background-color: #ffffff;
     background: linear-gradient(360deg, #ffffff 0%, #79b8ff0e 10%);
-}
+} */
 
 .homeContentDiv {
     /* margin-top: 2.5%; */
@@ -793,14 +793,6 @@ footer {
 
 @media (min-width: 768px) {
 
-    .homeTopContainer {
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-        width: 80%;
-        margin: auto;
-    }
-
     .homeContentDiv {
         margin-top: 0;
     }
@@ -827,18 +819,20 @@ footer {
         height: 250px;
     }
 
+    /* .tabletFlexWrap {
+        display: flex;
+        max-width: 325px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    } */
+
+    .knowTextContent .immuneFoods li {
+        text-align: left;
+    }
+
     .aboutP {
         width: 80%;
         font-size: 14px;
-    }
-
-    .knowTextContent,
-    .boostImmunityDiv {
-        /* width: 300px; */
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 325px;
-        flex: 1;
     }
 
     .socialIcons {
@@ -849,7 +843,7 @@ footer {
         display: none;
     }
 
-    nav a { /* OMG WTF SPACING DOESN'T WORK HOW I WANT NO MATTER WHAT*/
+    nav a { 
         color: rgb(29, 62, 109);
         text-decoration: none;
         font-weight: 550;
@@ -942,21 +936,18 @@ footer {
 
 @media (min-width: 1024px) {
 
-    header {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+    .kioskIllustration {
+        width: 1024px;
+        margin-bottom: 18px;
     }
 
-    .logoLink {
-        order: 1;
-        text-align: center;
+    .aboutIllustration {
+        width: 1024px;
+        margin-bottom: 48px;
     }
-    
-    .socialIcons {
-        display: flex;
-        width: 360px;
-        justify-content: space-around;
+
+    .homeTopContainer {
+        background: none;
     }
 
     .socialIcons i {
@@ -972,27 +963,6 @@ footer {
         border-radius: 50%;
     } 
 
-    .menu {
-        display: flex;
-        margin: 0;
-    }
-
-    nav {
-        width: 360px;
-        order: 2;
-    }
-
-    .homeContentDiv h1 {
-        font-size: 50px;
-    }
-
-    .homeContentDiv p {
-        font-size: 26px;
-    }
-
-    .homeContentDiv span {
-        font-size: 20px;
-    }
 
     .aboutSectionTwo {
         width: 80%;
@@ -1047,7 +1017,7 @@ footer {
 @media (min-width: 1281px) {
 
     body {
-        width: 90%;
+        /* width: 90%; */
         margin: auto;
     }
 
@@ -1060,13 +1030,22 @@ footer {
     .homeContentDiv p {
         width: 50%;
         margin: auto;
-        margin-top: 40px;
-        margin-bottom: 20px;
+        margin-top: 10px;
     }
 
     .homeContentDiv button {
         width: 25%;
         margin-left: 37.5%;
+    }
+
+    .kioskIllustration {
+        width: 1281px;
+        margin: auto;
+    }
+
+    .aboutIllustration {
+        width: 1281px;
+        margin-bottom: 52px;
     }
 
     .aboutSectionTwo .safeOne {
@@ -1118,11 +1097,34 @@ footer {
     }
 }
 
+@media (min-width: 1325px) {
+
+    .kioskIllustration {
+        width: 1325px;
+        margin-bottom: 20px;
+    }
+
+    .aboutIllustration {
+        width: 1325px;
+        margin-bottom: 50px;
+    }
+}
+
 @media (min-width: 1600px) {
 
     header .logo {
         height: 140px;
         width: 150px;
+    }
+
+    .kioskIllustration {
+        width: 1600px;
+        margin-bottom: 24px;
+    }
+
+    .aboutIllustration {
+        width: 1600px;
+        margin-bottom: 74px;
     }
 
     .menu {
